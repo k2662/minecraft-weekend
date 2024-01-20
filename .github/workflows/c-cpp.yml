@@ -19,3 +19,7 @@ jobs:
       run: make libs -j4
     - name: make
       run: make
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v4.2.0
+      with:
+        path: .
